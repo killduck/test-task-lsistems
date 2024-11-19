@@ -13,7 +13,7 @@ export default function TakePrice(props){
         </div>
       </div>
 
-      <Form></Form>
+      <Form />
 
     </div>
   )

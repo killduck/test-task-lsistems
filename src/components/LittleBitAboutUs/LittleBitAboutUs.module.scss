@@ -1,7 +1,6 @@
 
 .LittleBitAboutUsWrap{
     width: 100%;
-    // position: absolute;
     display: flex;
     margin-left: 34px;
 
@@ -22,13 +21,7 @@
 
         .descriptionText{
             width: 430px;
-            // height: 174px;
-            // top: 92px;
-            // left: -527px;
-            // gap: 0px;
             color: #2A2A2A;
-
-            //styleName: Текст;
             font-family: Open Sans;
             font-size: 14px;
             font-weight: 400;
@@ -46,7 +39,7 @@
 
 }
 
-@media(max-width: 1080px){
+@media(max-width: 1100px){
     .LittleBitAboutUsWrap {
         display: block;
     }
@@ -76,19 +69,4 @@
             width: 350px;
         }
     }
-}
-
-@media(max-width: 500px){
-/*Стили, на устройствах с максимальной ширеной экрана 500 пикселей и меньше */
-    // .LittleBitAboutUsWrap {
-    //     display: block;
-
-    //     .descriptionWrap {
-    //         max-width: 328px;
-    //     }
-
-    //     .SimpleSlider{
-    //         max-width: 328px;
-    //     }
-    // }
 }

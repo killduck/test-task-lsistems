@@ -1,5 +1,4 @@
 .SimpleSlider {
-    // width: 50%;
     position: relative;
     padding-top: 20px;
 
@@ -15,7 +14,6 @@
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
         color: #8C8C8C;
-        
     }
 
     .input{
@@ -35,8 +33,6 @@
     }
     
     .sliderCard{
-        // width: 251px;
-        // height: 226px;
         background: #FFFFFF;
 
         .sliderCardImg{
@@ -46,7 +42,6 @@
         .sliderCardText{
             margin: 23px 14px;
             display: block;
-            // width: 275px;
             height: 81px;
             color: #2A2A2A;
             font-family: Open Sans;
@@ -56,8 +51,6 @@
             text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
-
-
         }
     }
 }

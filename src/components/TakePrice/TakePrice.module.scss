@@ -30,7 +30,6 @@
                 top: 29px;
                 left: 67px;
                 width: 440px;
-
             }
 
             .logoText{
@@ -49,6 +48,13 @@
 
     .formWrap{
         width: 44%;
+    }
+}
+
+@media(max-width: 1130px){
+    .takePrice{
+        display: block;
+        width: fit-content;
     }
 }
 

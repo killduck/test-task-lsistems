@@ -4,10 +4,10 @@ import styles from './LittleBitAboutUs.module.scss';
 export default function LittleBitAboutUs(props){
 
   let list_slides = [
-    "404_01.png",
-    "404_02.png",
-    "404_03.png",
-    "404_04.png",
+    {"name": "1.png"},
+    {"name": "2.png"},
+    {"name": "3.png"},
+    {"name": "4.png"},
   ];
 
   return (
@@ -33,4 +33,3 @@ export default function LittleBitAboutUs(props){
     </div>
   )
 };
-
