@@ -9,7 +9,7 @@
             width: 588px;
             height: 422px;
             background-color: #1946BA;
-            margin: 246px 0 0 0;
+            margin: 243px 0 0 0;
             position: relative;
 
             .logoImg{
@@ -21,20 +21,20 @@
             }
 
             .logoTitle{
-                font-family: Open Sans;
-                font-size: 66px;
+                font-family: Open_Sans;
+                font-size: 61.5px;
                 font-weight: 700;
-                line-height: 63px;
+                line-height: 63.5px;
                 color: #FFFFFF;
                 position: absolute;
-                top: 29px;
-                left: 67px;
+                top: 33px;
+                left: 65px;
                 width: 440px;
             }
 
             .logoText{
-                font-family: Open Sans;
-                font-size: 18px;
+                font-family: Open_Sans;
+                font-size: 15.4px;
                 font-weight: 400;
                 line-height: 20.51px;
                 color: #FFFFFF;
@@ -55,6 +55,10 @@
     .takePrice{
         display: block;
         width: fit-content;
+
+        .logoWrap{
+            width: fit-content;
+        }
     }
 }
 
