@@ -1,0 +1,92 @@
+.formWrap{
+    width: 44%;
+    margin: 372px 0 0 105px;
+
+    .form{
+
+        .inputName {
+            width: fit-content;
+            margin-bottom: 25px;
+            input{
+                width: 410px;
+                height: 28px;
+                padding-left: 14px;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: left;
+            }
+        }
+        .inputEmail {
+            width: fit-content;
+            margin-bottom: 42px;
+            input{
+                width: 410px;
+                height: 28px;
+                padding-left: 14px;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: left;
+            }
+        }
+        input::placeholder {
+            color: #8C8C8C;
+        }
+        .formSubmit {
+            width: fit-content;
+            button {
+                width: 246px;
+                height: 34px;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: 700;
+                text-align: center;
+                color: #FFFFFF;
+                background-color: #1946BA;
+                border: none;
+
+                &:hover{
+                    background-color: #476bc7;
+                    border: 3px solid #9748ff;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .formWrap{
+        width: 100%;
+        margin: 0;
+
+        .form{
+
+            .inputName {
+                margin: 0 26px 30px;
+                input{
+                    width: 272px;
+                    height: 35px;
+                    padding-left: 19px;
+                }
+            }
+            .inputEmail {
+                margin: 0px 26px 31px;
+                input{
+                    width: 272px;
+                    height: 35px;
+                    padding-left: 19px;
+                }
+            }
+            .formSubmit {
+
+                button {
+                    width: 296px;
+                    height: 41px;
+                    font-size: 17px;
+                    margin: 0 26px;
+                }
+            }
+        }
+    }
+}

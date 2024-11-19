@@ -1,0 +1,11 @@
+.default{
+    width: 1060px;
+    position: relative;
+}
+
+@media(max-width: 768px){
+    .default {
+        width: 100%;
+        margin: 20px auto 120px;
+    }
+}

@@ -1,0 +1,104 @@
+.SimpleSlider {
+    // width: 50%;
+    position: relative;
+    padding-top: 20px;
+
+    .slideIndex{
+        position: absolute;
+        left: -30px;
+        top: 40px;
+        width: 25px;
+        font-family: Geometria;
+        font-size: 14px;
+        line-height: 18.87px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #8C8C8C;
+        
+    }
+
+    .input{
+        width: 413px;
+        height: 4px;
+        position: absolute;
+        left: 7px;
+        top: 61px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        visibility: hidden;
+    }
+    input[type="range"]::-moz-range-thumb {
+        visibility: hidden;
+    }
+    
+    .sliderCard{
+        // width: 251px;
+        // height: 226px;
+        background: #FFFFFF;
+
+        .sliderCardImg{
+            margin: 25px 16px 20px;
+            width: 74px;
+        }
+        .sliderCardText{
+            margin: 23px 14px;
+            display: block;
+            // width: 275px;
+            height: 81px;
+            color: #2A2A2A;
+            font-family: Open Sans;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+
+        }
+    }
+}
+
+.prevArrow{
+    position: absolute;
+    right: 56px;
+    top: -77px;
+    width: 36px;
+}
+
+.nextArrow{
+    position: absolute;
+    right: 2px;
+    top: -77px;
+    width: 36px;
+}
+
+@media(max-width: 768px){
+    .SimpleSlider {
+        margin: 0 14px;
+
+        .slideIndex{
+            left: 7px;
+            top: 42px;
+        }
+
+        .input{
+            width: fit-content;
+            left: 40px;
+        }
+    }
+
+    .prevArrow{
+        right: 102px;
+        top: -74px;
+        width: 30px;
+    }
+    .nextArrow{
+        right: 64px;
+        top: -74px;
+        width: 30px;
+    }
+}

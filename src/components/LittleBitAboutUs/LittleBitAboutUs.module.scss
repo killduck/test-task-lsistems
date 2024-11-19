@@ -1,0 +1,94 @@
+
+.LittleBitAboutUsWrap{
+    width: 100%;
+    // position: absolute;
+    display: flex;
+    margin-left: 34px;
+
+    .descriptionWrap{
+        width: 50%;
+
+        .descriptionTitle{
+            color: #1946BA;
+            font-family: Open Sans;
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 78px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            margin: 20px 0px 71px;
+        }
+
+        .descriptionText{
+            width: 430px;
+            // height: 174px;
+            // top: 92px;
+            // left: -527px;
+            // gap: 0px;
+            color: #2A2A2A;
+
+            //styleName: Текст;
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            margin-left: 3px;
+        }
+    }
+    
+    .sliderWrap{
+        width: 50%;
+    }
+
+}
+
+@media(max-width: 1080px){
+    .LittleBitAboutUsWrap {
+        display: block;
+    }
+}
+
+@media(max-width: 768px){
+    .LittleBitAboutUsWrap {
+        display: block;
+
+        .descriptionWrap {
+            width: fit-content;
+            
+            .descriptionTitle {
+                width: max-content;
+                font-size: 27px;
+                margin: 0;
+                line-height: normal;
+            }
+            .descriptionText{
+                max-width: 220px;
+                font-size: 12px;
+                line-height: 18.8px;
+
+            }
+        }
+        .sliderWrap{
+            width: 350px;
+        }
+    }
+}
+
+@media(max-width: 500px){
+/*Стили, на устройствах с максимальной ширеной экрана 500 пикселей и меньше */
+    // .LittleBitAboutUsWrap {
+    //     display: block;
+
+    //     .descriptionWrap {
+    //         max-width: 328px;
+    //     }
+
+    //     .SimpleSlider{
+    //         max-width: 328px;
+    //     }
+    // }
+}
