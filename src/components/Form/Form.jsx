@@ -7,6 +7,9 @@ export default function Form(props){
   const [fieldName, setFieldName] = useState("");
   const [fieldEmail, setFieldEmail] = useState("");
 
+  const [invalidValueName, setInvalidValueName] = useState('');
+  const [invalidValueEmail, setInvalidValueEmail] = useState('');
+
   function writeName(evt) {
     setFieldName((prev) => prev = evt);
   }
@@ -16,11 +19,11 @@ export default function Form(props){
   }
 
   function check_name(re_name) {
-    if (re_name.test(fieldName) && fieldName.length >= 3) {
+    if (re_name.test(fieldName) && fieldName.length >= 2) {
       setForm(form = {username: fieldName, email: null });
     }
     else {
-      setFieldName("");
+      setInvalidValueName('linear-gradient(to right, #fff , #f00 100%)');
     }
   }
 
@@ -29,12 +32,12 @@ export default function Form(props){
       setForm(form = {username: fieldName, email: fieldEmail });
     }
     else {
-      setFieldEmail("");
+      setInvalidValueEmail('linear-gradient(to right, #fff , #f00 100%)');
     }
   }
 
   function sendForm(){
-    const re_name = /^\S{3,}$/;
+    const re_name = /^\S{2,}$/;
     const re_email = /@/;
 
     if(fieldName){
@@ -48,6 +51,8 @@ export default function Form(props){
       console.log('тут делаем реквест');
       setFieldName("");
       setFieldEmail("");
+      setInvalidValueName("");
+      setInvalidValueEmail("");
       setForm({ username: null, email: null });
     }
   }
@@ -64,6 +69,7 @@ export default function Form(props){
             required="required"
             value={(fieldName) ? fieldName : ""}
             onChange={(evt) => writeName(evt.target.value)}
+            style={{background: invalidValueName}}
           ></input>
         </div>
 
@@ -76,6 +82,7 @@ export default function Form(props){
             required="required"
             value={(fieldEmail) ? fieldEmail : ""}
             onChange={(evt) => writeEmail(evt.target.value)}
+            style={{background: invalidValueEmail}}
           ></input>
         </div>
 
