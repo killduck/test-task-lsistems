@@ -1,0 +1,101 @@
+$mainBlue: #1946BA;
+
+.SimpleSlider {
+    position: relative;
+    margin-left: 11px;
+
+    .slideIndex{
+        position: absolute;
+        left: -44px;
+        top: -102px;
+        width: 25px;
+        height: 19px;
+        font-family: Geometria;
+        font-size: 15px;
+        line-height: 18.87px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #8C8C8C;
+    }
+
+    .progressBar{
+        width: 484px;
+        height: 4px;
+        position: absolute;
+        left: 0px;
+        top: -79.5px;
+        background-color: #DEDEDE;
+    }
+
+    .sliderCard{
+        background: #FFFFFF;
+        height: 265px;
+
+        .sliderCardImg{
+            margin: 31px 20px 20px;
+            width: 86px;
+            color: $mainBlue;
+        }
+        .sliderCardText{
+            margin: 28px 36px 0px 20px;
+            display: block;
+            height: 81px;
+            color: #2A2A2A;
+            font-family: Open_Sans;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 26.96px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+    }
+}
+
+.prevArrow{
+    position: absolute;
+    left: 504px;
+    top: -99.5px;
+    width: 43px;
+}
+
+.nextArrow{
+    position: absolute;
+    left: 567px;
+    top: -99.5px;
+    width: 43px;
+}
+
+@media(max-width: 728px){
+    .SimpleSlider {
+        width: 295px;
+        height: 327px;
+        margin: 0 auto;
+
+        .slideIndex{
+            width: 25px;
+            height: 19px;
+            left: 1px;
+            top: -60px;
+        }
+
+        .progressBar{
+            width: 124px;
+            height: 4px;
+            left: 40px;
+            top: -38px;
+        }
+    }
+
+    .prevArrow{
+        left: 184px;
+        top: -58px;
+        width: 43px;
+    }
+    .nextArrow{
+        left: 247px;
+        top: -58px;
+        width: 43px;
+    }
+}

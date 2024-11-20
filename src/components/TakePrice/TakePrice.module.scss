@@ -1,0 +1,108 @@
+.takePrice{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    .logoWrap{
+        width: 745.45px;
+        height: 579.88px;
+        
+
+        .logoBackground{
+            width: 690px;
+            height: 496px;
+            background-color: #1946BA;
+            margin: 83.88px 55px 0 0;
+            position: relative;
+
+            .logoImg{
+                position: absolute;
+                right: -57px;
+                top: -82px;
+            }
+
+            .logoTitle{
+                font-family: Open_Sans;
+                font-size: 72px;
+                font-weight: 700;
+                line-height: 74.52px;
+                color: #FFFFFF;
+                position: absolute;
+                top: 38px;
+                left: 82px;
+                width: 388px;
+                height: 224px;
+            }
+
+            .logoText{
+                font-family: Open_Sans;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 24.51px;
+                color: #FFFFFF;
+                position: absolute;
+                bottom: 104px;
+                left: 82px;
+                width: 384px;
+                height: 25px;
+            }
+        }
+    }
+
+    .formWrap{
+        width: 44%;
+    }
+}
+
+
+@media(max-width: 728px){
+    .takePrice{
+        margin: 0 auto 38px;
+        position: relative;
+        display: block;
+
+        .logoWrap{
+            position: unset;
+            width: 320px;
+            height: 243px;
+            margin: 0 0 38px 0;
+
+            .logoBackground{
+                width: 320px;
+                height: 243px;
+                margin: 0 auto;
+
+                .logoImg{
+                    width: 186px;
+                    height: 219px;
+                    position: absolute;
+                    right: 0px;
+                    top: -37px;
+                }
+    
+                .logoTitle{
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 40.85px;
+                    width: 215px;
+                    top: 0px;
+                    left: 15px;
+                }
+    
+                .logoText{
+                    line-height: 21.79px;
+                    bottom: 55px;
+                    left: 15px;
+                    width: 260px;
+                    font-size: 16px;
+                }
+            }
+        }
+        .formWrap{
+            width: 100%;
+            margin: 0;
+        }
+    }
+}

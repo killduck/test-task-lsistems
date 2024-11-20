@@ -1,0 +1,42 @@
+.slick-track{
+  width: 2850px!important;
+  top: -7px;
+}
+
+.slick-current{
+  opacity: 1!important;
+}
+
+.slick-active{
+  opacity: .5;
+  /* width: 295px !important; */
+  height: 265px;
+  margin: 11px 9px 11px 11px;
+  box-shadow: 0px 5px 20px 0px #1946BA20;
+}
+
+.slick-slide{
+  opacity: .5;
+  /* width: 295px !important; */
+  height: 265px;
+  margin: 11px 9.5px;
+  box-shadow: 0px 5px 20px 0px #1946BA20;
+}
+
+.slick-list {
+  margin-top: 122px;
+}
+.slick-prev {
+  left: 520px;
+  top: -3px;
+}
+
+.slick-next {
+  right: 120px;
+  top: -3px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}

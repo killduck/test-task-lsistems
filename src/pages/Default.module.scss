@@ -1,0 +1,12 @@
+.default{
+    width: 1400px;
+    height: 1216px;
+    position: relative;
+}
+
+@media(max-width: 728px){
+    .default {
+        width: 320px;
+        height: 1388px;
+    }
+}
