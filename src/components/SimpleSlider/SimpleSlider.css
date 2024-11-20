@@ -1,5 +1,6 @@
 .slick-track{
-  width: 2750px!important;
+  width: 2850px!important;
+  top: -7px;
 }
 
 .slick-current{
@@ -8,15 +9,22 @@
 
 .slick-active{
   opacity: .5;
-  width: 254px !important;
-  height: 226px;
-  margin: 11px 5px 11px 11px;
+  /* width: 295px !important; */
+  height: 265px;
+  margin: 11px 9px 11px 11px;
+  box-shadow: 0px 5px 20px 0px #1946BA20;
+}
+
+.slick-slide{
+  opacity: .5;
+  /* width: 295px !important; */
+  height: 265px;
+  margin: 11px 9.5px;
   box-shadow: 0px 5px 20px 0px #1946BA20;
 }
 
 .slick-list {
-  width: calc(100% - 50px);
-  margin-top: 103px;
+  margin-top: 122px;
 }
 .slick-prev {
   left: 520px;

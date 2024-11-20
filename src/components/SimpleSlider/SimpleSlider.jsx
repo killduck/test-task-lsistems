@@ -3,14 +3,13 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from './SimpleSlider.module.scss';
 import './SimpleSlider.css';
 import Slider from "react-slick";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 export default function SimpleSlider(props) {
 
   let list_slides = props.list_slides;
   let baseUrl = props.baseUrl;
   
-  let sliderRef = useRef(Number(0));
   const [updateCount, setUpdateCount] = useState(1);
 
   function SamplePrevArrow(props) {
@@ -28,14 +27,16 @@ export default function SimpleSlider(props) {
   }
 
   let settings = {
+    className: "slider variable-width",
     dots: false,
     infinite: true,
-    speed: 50,
+    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     afterChange: (evt) => checkCount(evt) ,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 768,
@@ -51,30 +52,26 @@ export default function SimpleSlider(props) {
     setUpdateCount((prev) => prev = evt+1);
   }
 
-  function slickGoTo(evt){
-    sliderRef.slickGoTo(evt.target.value);
+  function makeProgress(){
+    if(list_slides.length !== 0){
+      let result = (100 / list_slides.length) * updateCount;
+      return `${result}%`;
+    }
+    return '0%';
   }
-
   return (
     <div className={styles.SimpleSlider}>
       <p className={styles.slideIndex}>{updateCount}/{list_slides.length} </p>
-      <input
-        className={styles.input}
-        onChange={(evt) => slickGoTo(evt)}
-        value={updateCount}
-        type="range"
-        min={0}
-        max={list_slides.length}
+      <div 
+        className={styles.progressBar} 
+        style={{ background: `linear-gradient(to right, #1946BA ${makeProgress()} , #DEDEDE 0%)`}}
       />
       <Slider
-        ref={slider => {
-          sliderRef = slider;
-        }}
         {...settings}
       >
         {
           list_slides.map((slide) =>
-            <div key={slide} className={styles.sliderCard}>
+            <div key={slide} className={styles.sliderCard} style={{ width: '295px'}}>
               <img src={baseUrl + '067-discount.png'} className={styles.sliderCardImg} alt="картинка 404 ошибки" />
               <p className={styles.sliderCardText}>
                 Индивидуальные скидки в зависимости от объема покупки

@@ -1,47 +1,52 @@
 .takePrice{
     width: 100%;
     display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 
     .logoWrap{
-        width: 56%;
+        width: 745.45px;
+        height: 579.88px;
+        
 
         .logoBackground{
-            width: 588px;
-            height: 422px;
+            width: 690px;
+            height: 496px;
             background-color: #1946BA;
-            margin: 243px 0 0 0;
+            margin: 83.88px 55px 0 0;
             position: relative;
 
             .logoImg{
-                width: 367px;
-                height: 413px;
                 position: absolute;
-                right: -35px;
-                top: -69px;
+                right: -57px;
+                top: -82px;
             }
 
             .logoTitle{
                 font-family: Open_Sans;
-                font-size: 61.5px;
+                font-size: 72px;
                 font-weight: 700;
-                line-height: 63.5px;
+                line-height: 74.52px;
                 color: #FFFFFF;
                 position: absolute;
-                top: 33px;
-                left: 65px;
-                width: 440px;
+                top: 38px;
+                left: 82px;
+                width: 388px;
+                height: 224px;
             }
 
             .logoText{
                 font-family: Open_Sans;
-                font-size: 15.4px;
+                font-size: 18px;
                 font-weight: 400;
-                line-height: 20.51px;
+                line-height: 24.51px;
                 color: #FFFFFF;
                 position: absolute;
-                bottom: 89px;
-                left: 67px;
-                width: 440px;
+                bottom: 104px;
+                left: 82px;
+                width: 384px;
+                height: 25px;
             }
         }
     }
@@ -51,31 +56,23 @@
     }
 }
 
-@media(max-width: 1130px){
+
+@media(max-width: 728px){
     .takePrice{
+        margin: 0 auto 38px;
+        position: relative;
         display: block;
-        width: fit-content;
 
         .logoWrap{
-            width: fit-content;
-        }
-    }
-}
-
-@media(max-width: 768px){
-    .takePrice{
-        display: block;
-        width: fit-content;
-        margin: 50px 8px;
-
-        .logoWrap{
-            width: 100%;
-            margin-bottom: 42px;
+            position: unset;
+            width: 320px;
+            height: 243px;
+            margin: 0 0 38px 0;
 
             .logoBackground{
-                margin: 20px 10px 0;
-                width: 328px;
-                height: 248px;
+                width: 320px;
+                height: 243px;
+                margin: 0 auto;
 
                 .logoImg{
                     width: 186px;
@@ -86,19 +83,20 @@
                 }
     
                 .logoTitle{
-                    font-size: 35px;
+                    font-size: 30px;
                     font-weight: 700;
-                    line-height: 42px;
-                    width: 215px;    
-                    top: -5px;
-                    left: 14px;
+                    line-height: 40.85px;
+                    width: 215px;
+                    top: 0px;
+                    left: 15px;
                 }
     
                 .logoText{
-                    line-height: 23.51px;
-                    bottom: 36px;
-                    left: 16px;
+                    line-height: 21.79px;
+                    bottom: 55px;
+                    left: 15px;
                     width: 260px;
+                    font-size: 16px;
                 }
             }
         }

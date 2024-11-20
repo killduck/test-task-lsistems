@@ -1,7 +1,11 @@
 @font-face {
   font-family: 'Open_Sans';
   src: local('Open_Sans'), url(./fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format('truetype');
-  /* src: local('Open_Sans'), url(./fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf) format('truetype'); */
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: local('Geometria'), url(./fonts/Geometria/geometria_medium.otf) format('OpenType');
 }
 
 body {

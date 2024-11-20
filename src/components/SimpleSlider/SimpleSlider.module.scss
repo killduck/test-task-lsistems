@@ -1,14 +1,15 @@
 .SimpleSlider {
     position: relative;
-    padding-top: 20px;
+    margin-left: 11px;
 
     .slideIndex{
         position: absolute;
-        left: -30px;
-        top: 40px;
+        left: -44px;
+        top: -102px;
         width: 25px;
+        height: 19px;
         font-family: Geometria;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 18.87px;
         text-align: center;
         text-underline-position: from-font;
@@ -16,38 +17,33 @@
         color: #8C8C8C;
     }
 
-    .input{
-        width: 413px;
+    .progressBar{
+        width: 484px;
         height: 4px;
         position: absolute;
-        left: 7px;
-        top: 61px;
+        left: 0px;
+        top: -79.5px;
+        background-color: #DEDEDE;
     }
 
-    input[type="range"]::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        visibility: hidden;
-    }
-    input[type="range"]::-moz-range-thumb {
-        visibility: hidden;
-    }
-    
     .sliderCard{
         background: #FFFFFF;
+        height: 265px;
 
         .sliderCardImg{
-            margin: 26px 18px 20px;
-            width: 74px;
+            margin: 31px 20px 20px;
+            width: 86px;
+            color: #1946BA;
         }
         .sliderCardText{
-            margin: 23px 28px 0px 19px;
+            margin: 28px 36px 0px 20px;
             display: block;
             height: 81px;
             color: #2A2A2A;
             font-family: Open_Sans;
-            font-size: 15.4px;
+            font-size: 18px;
             font-weight: 600;
-            line-height: 23px;
+            line-height: 26.96px;
             text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
@@ -57,41 +53,47 @@
 
 .prevArrow{
     position: absolute;
-    right: 56px;
-    top: -77px;
-    width: 36px;
+    left: 504px;
+    top: -99.5px;
+    width: 43px;
 }
 
 .nextArrow{
     position: absolute;
-    right: 2px;
-    top: -77px;
-    width: 36px;
+    left: 567px;
+    top: -99.5px;
+    width: 43px;
 }
 
-@media(max-width: 768px){
+@media(max-width: 728px){
     .SimpleSlider {
-        margin: 0 14px;
+        width: 295px;
+        height: 327px;
+        margin: 0 auto;
 
         .slideIndex{
-            left: 7px;
-            top: 42px;
+            width: 25px;
+            height: 19px;
+            left: 1px;
+            top: -60px;
         }
 
-        .input{
-            width: fit-content;
+        .progressBar{
+            width: 124px;
+            height: 4px;
             left: 40px;
+            top: -38px;
         }
     }
 
     .prevArrow{
-        right: 102px;
-        top: -74px;
-        width: 30px;
+        left: 184px;
+        top: -58px;
+        width: 43px;
     }
     .nextArrow{
-        right: 64px;
-        top: -74px;
-        width: 30px;
+        left: 247px;
+        top: -58px;
+        width: 43px;
     }
 }

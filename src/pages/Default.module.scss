@@ -1,11 +1,13 @@
 .default{
-    width: 1060px;
+    width: 1400px;
+    height: 1216px;
     position: relative;
+    background-color: red;
 }
 
-@media(max-width: 768px){
+@media(max-width: 728px){
     .default {
-        width: 100%;
-        margin: 20px auto 120px;
+        width: 320px;
+        height: 1388px;
     }
 }
