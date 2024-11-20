@@ -1,8 +1,11 @@
+#root{
+    $mainBlue: #1946BA;
+}
+
 .default{
     width: 1400px;
     height: 1216px;
     position: relative;
-    background-color: red;
 }
 
 @media(max-width: 728px){

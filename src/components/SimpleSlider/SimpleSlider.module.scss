@@ -1,3 +1,5 @@
+$mainBlue: #1946BA;
+
 .SimpleSlider {
     position: relative;
     margin-left: 11px;
@@ -33,7 +35,7 @@
         .sliderCardImg{
             margin: 31px 20px 20px;
             width: 86px;
-            color: #1946BA;
+            color: $mainBlue;
         }
         .sliderCardText{
             margin: 28px 36px 0px 20px;
